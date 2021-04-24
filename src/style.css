@@ -4,6 +4,19 @@
   padding: 0;
 }
 
+@keyframes myAnimation {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    display: none;
+    opacity: 1;
+  }
+}
+
 .webgl
 {
   display: flex;
@@ -15,6 +28,10 @@
 }
 
 .title {
+  animation-name: myAnimation;
+  animation-duration: 8000ms;
+  animation-fill-mode: forwards;
+
   color: white;
   font-family: "Helvetica";
   font-size: 30px;
@@ -24,6 +41,10 @@
 }
 
 .subtitle {
+  animation-name: myAnimation;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+
   color: #ccc;
   font-family: "Helvetica";
   font-size: 20px;
@@ -33,6 +54,7 @@
 }
 
 .quote {
+
   display: flex;
   justify-content: center;
   height: 40%;
@@ -60,6 +82,10 @@
 }
 
 .quote-container {
+  animation-name: myAnimation;
+  animation-duration: 4000ms;
+  animation-fill-mode: forwards;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
