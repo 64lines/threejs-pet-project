@@ -85,7 +85,7 @@
   animation-name: myAnimation;
   animation-duration: 4000ms;
   animation-fill-mode: forwards;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,7 +134,7 @@
 }
 
 .background {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 30%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(255,255,255,0) 100%);
 }
 
 .container {
