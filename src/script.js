@@ -5,7 +5,6 @@ import dat from 'dat.gui';
 
 const COLOR_1 = '#cc9600';
 const COLOR_2 = '#fff';
-const COLOR_3 = '#343434';
 
 function addDebug(camera) {
   const gui = new dat.GUI({ width: 400 })
@@ -55,7 +54,7 @@ function createCamera(window) {
 function createMeshBox(textureLoader, size, x, y, z) {
   const geometry = new THREE.IcosahedronGeometry(size);
   const matcapTexture = textureLoader.load('/textures/matcaps/3.png') // This one looks great!
-  const color = Math.random() < 0.5 ? COLOR_1 : (Math.random() < 0.5 ? COLOR_2 : COLOR_3);
+  const color = Math.random() < 0.5 ? COLOR_1 : COLOR_2;
 
   const material = Math.random() < 0.5 ? 
     new THREE.MeshMatcapMaterial({ color: color, matcap: matcapTexture }) : 
