@@ -8,9 +8,6 @@
   0%{
     opacity: 0;
   }
-  50%{
-    opacity: 0.5;
-  }
   100%{
     display: none;
     opacity: 1;
@@ -29,7 +26,7 @@
 
 .title {
   animation-name: myAnimation;
-  animation-duration: 8000ms;
+  animation-duration: 5000ms;
   animation-fill-mode: forwards;
 
   color: white;
@@ -42,7 +39,7 @@
 
 .subtitle {
   animation-name: myAnimation;
-  animation-duration: 1000ms;
+  animation-duration: 5000ms;
   animation-fill-mode: forwards;
 
   color: #ccc;
@@ -83,7 +80,7 @@
 
 .quote-container {
   animation-name: myAnimation;
-  animation-duration: 4000ms;
+  animation-duration: 5000ms;
   animation-fill-mode: forwards;
 
   display: flex;
