@@ -57,7 +57,7 @@
 
   display: flex;
   justify-content: center;
-  height: 40%;
+  height: 50%;
 
   font-family: "Times";
   font-size: 20px;
@@ -107,6 +107,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  height: 30%;
 }
 
 .title-container {
