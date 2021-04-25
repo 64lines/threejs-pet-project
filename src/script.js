@@ -54,7 +54,9 @@ function createCamera(window) {
 function createMeshBox(textureLoader, size, x, y, z) {
   const geometry = new THREE.IcosahedronGeometry(size);
   const matcapTexture = textureLoader.load('/textures/matcaps/3.png') // This one looks great!
-  const material = new THREE.MeshMatcapMaterial({ color: Math.random() < 0.5 ? COLOR_1 : COLOR_2 })
+  const material = new THREE.MeshMatcapMaterial({ 
+    color: Math.random() < 0.5 ? COLOR_1 : COLOR_2,
+  })
   material.matcap = matcapTexture
 
   const mesh = new THREE.Mesh(geometry, material);
